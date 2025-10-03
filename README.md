@@ -50,11 +50,11 @@ source_file = r'path/to/your/compressed.zarr'
 
 if check_source_folders(source_file):
 
-&nbsp;   # 2. Decompress the array into a NumPy array in memory
+	# 2. Decompress the array into a NumPy array in memory
 
-&nbsp;   decompressed_data = decompress_zarr_to_memory(source_file)
+	decompressed_data = decompress_zarr_to_memory(source_file)
 
-&nbsp;   print("Data loaded successfully into memory.")
+	print("Data loaded successfully into memory.")
 
-&nbsp;   print(decompressed_data.shape)
+	print(decompressed_data.shape)
 
