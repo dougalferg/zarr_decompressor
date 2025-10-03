@@ -52,9 +52,26 @@ if check_source_folders(source_file):
 
 	# 2. Decompress the array into a NumPy array in memory
 
-	decompressed_data = decompress_zarr_to_memory(source_file)
+	decompressed_data, wavenumber, mask  = decompress_zarr_to_memory(source_file)
+        
 
 	print("Data loaded successfully into memory.")
 
 	print(decompressed_data.shape)
+
+# Alternative usage: decompress to a storage site
+
+destination_file = r'path/to/your/storage_location.zarr
+
+# 1. Check if the source data is valid
+
+if check_source_folders(source_file):
+
+	# 2. Decompress the array into a zarr folder
+
+	decompress_zarr_to_storage(source_file, destination_file)
+
+	print("Data successfully decompressed to destination folder.")
+
+
 
