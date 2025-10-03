@@ -1,6 +1,6 @@
 # zarr\_decompressor
 
-Hopefully a useful zarr decompressor for QCL IR datasets:
+Hopefully a useful zarr decompressor for QCL IR datasets that have been stored as ints and compressed using zarr:
 
 # Zarr Decompressor Toolkit
 
